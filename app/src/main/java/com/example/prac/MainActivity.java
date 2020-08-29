@@ -20,6 +20,7 @@ import com.bumptech.glide.Glide;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity implements ClickInterface {
 RecyclerView mListView;
@@ -57,7 +58,7 @@ RecyclerView mListView;
         ArrayList<File> images=findfile(Environment.getExternalStorageDirectory());
         strings=new String[images.size()];
         String[] st=new String[images.size()];
-        ArrayList<RecyclerModel> recyclerModels=new ArrayList<>();
+
         for(int i=0;i<images.size();++i)
         { RecyclerModel model=new RecyclerModel();
             model.setName(images.get(i).getName());
@@ -66,13 +67,16 @@ RecyclerView mListView;
             st[i]=images.get(i).getName();
             recyclerModels.add(model);
         }
+
        Adapter adapter=new Adapter(recyclerModels,this);
         mListView.setAdapter(adapter);
     }
     String[] strings;
-
+    ArrayList<RecyclerModel> recyclerModels=new ArrayList<>();
     @Override
     public void click(int position) {
-
+        Intent intent=new Intent(MainActivity.this,ImageActivity.class);
+        intent.putExtra("uri",recyclerModels.get(position).getUri());
+        startActivity(intent);
     }
 }

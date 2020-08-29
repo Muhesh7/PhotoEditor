@@ -45,6 +45,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
         public MyHolder(@NonNull VideolayoutBinding itemView) {
             super(itemView.getRoot());
             mBinding=itemView;
+            mBinding.layout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mClickInterface.click(getAdapterPosition());
+                }
+            });
         }
     }
 }

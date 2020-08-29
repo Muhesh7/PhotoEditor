@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolOne">
+
+    <ImageButton
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:src="@android:drawable/radiobutton_off_background"
+        android:text="Circle"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:layout_toRightOf="@+id/circle"
+        android:id="@+id/rectangle"
+        android:src="@android:drawable/checkbox_off_background"
+        android:layout_width="wrap_content"
+        android:text="Rect"
+        android:layout_height="40dp"/>
+    <ImageButton
+        android:layout_toRightOf="@+id/rectangle"
+        android:id="@+id/free"
+       android:src="@android:drawable/ic_menu_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+    <ImageButton
+        android:layout_toRightOf="@+id/free"
+        android:id="@+id/tri"
+        android:text="Tri"
+        android:src="@android:drawable/ic_dialog_alert"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_marginStart="15dp"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/minus"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp" />
+    <ImageButton
+        android:id="@+id/minus"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

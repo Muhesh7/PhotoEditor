@@ -3,4 +3,47 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <item name="Normal" type="color">#A8A77A</item>
+    <item name="Fighting" type="color">#C22E28</item>
+    <item name="Flying" type="color">#A98FF3</item>
+    <item name="Poison" type="color">#A33EA1</item>
+    <item name="Ground" type="color">#E2BF65</item>
+    <item name="Rock" type="color">#B6A136</item>
+    <item name="Bug" type="color">#A6B91A</item>
+    <item name="Ghost" type="color">#735797</item>
+    <item name="Steel" type="color">#B7B7CE</item>
+    <item name="Fire" type="color">#EE8130</item>
+    <color name="Water">#6390F0</color>
+    <color name="Grass">#7AC74C</color>
+    <color name="Electric">#F7D02C</color>
+    <color name="Psychic">#F95587</color>
+    <color name="Ice">#96D9D6</color>
+    <color name="Dragon">#6F35FC</color>
+    <color name="Dark">#D685AD</color>
+    <color name="Fairy">#00FF00</color>
+    <color name="UnKnown">#008080</color>
+    <color name="Shadow">#000080</color>
+    <array name="colors">
+        <item>@color/Normal</item>
+        <item>@color/Fighting</item>
+        <item>@color/Flying</item>
+        <item>@color/Poison</item>
+        <item>@color/Ground</item>
+        <item>@color/Rock</item>
+        <item>@color/Bug</item>
+        <item>@color/Ghost</item>
+        <item>@color/Steel</item>
+        <item>@color/Fire</item>
+        <item>@color/Water</item>
+        <item>@color/Grass</item>
+        <item>@color/Electric</item>
+        <item>@color/Psychic</item>
+        <item>@color/Ice</item>
+        <item>@color/Dragon</item>
+        <item>@color/Dark</item>
+        <item>@color/Fairy</item>
+        <item>@color/UnKnown</item>
+        <item>@color/Shadow</item>
+
+    </array>
 </resources>
